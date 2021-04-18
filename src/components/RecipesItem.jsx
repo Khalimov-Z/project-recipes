@@ -29,6 +29,10 @@ function RecipesItem(props) {
       setLikeStatus(!likeStatus);
       setLikeClick(likeClick + 1);
     }
+    if (likeStatus === true) {
+      setLikeStatus(!likeStatus);
+      setLikeClick(likeClick - 1);
+    }
   };
 
   return (
@@ -74,6 +78,7 @@ function RecipesItem(props) {
         </div>
         <div>
           <FiBookmark
+            style={{cursor: 'pointer'}}
             size={25}
             fill={props.item.favorite ? "black" : "none"}
             onClick={() => setFavorite(props.item.id, props.item.favorite)}
@@ -89,6 +94,8 @@ function RecipesItem(props) {
         <div className="LikeOne" onClick={() => commOpen()}>
           <FiMessageCircle size={25} />
         </div>
+        <div className="ya-share2" data-curtain data-shape="round"
+             data-services="messenger,vkontakte,facebook,odnoklassniki"></div>
       </div>
       <div style={{ borderTop: "1px solid darkgrey" }} className="pb-4">
         {" "}
