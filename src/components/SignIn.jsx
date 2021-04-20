@@ -67,6 +67,7 @@ export default function SignIn() {
   }
 
   const error = useSelector(state => state.recipes.error);
+  const authorizing = useSelector(state => state.recipes.authorizing);
 
   return (
     <Container component="main" maxWidth="xs">
@@ -124,6 +125,7 @@ export default function SignIn() {
             color="primary"
             className={classes.submit}
             onClick={handleClick}
+            disabled={authorizing}
           >
             Sign In
           </Button>

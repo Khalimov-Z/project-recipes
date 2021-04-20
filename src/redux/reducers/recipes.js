@@ -7,7 +7,7 @@ const FAVORITE_SET_START = "favorite/set/start";
 const FAVORITE_SET_SUCCESS = "favorite/set/success";
 const AUTH_STARTED = "auth/started";
 const AUTH_FAILED = "auth/failed";
-const AUTH_SUCCEED = "auth/failed";
+const AUTH_SUCCEED = "auth/succeed";
 
 const initialState = {
   items: [],
