@@ -145,28 +145,6 @@ export function favoritePatch(id, favorite) {
   };
 }
 
-export const loginStart = (login, password) => (dispatch) => {
-  dispatch({ type: AUTH_STARTED });
-
-  fetch("http://localhost:3010/admin")
-    .then((response) => response.json())
-    .then((json) => {
-      const random = Math.random();
-
-      if (random < 0.5) {
-        dispatch({
-          type: AUTH_FAILED,
-          payload: json,
-        });
-      } else {
-        dispatch({
-          type: AUTH_SUCCEED,
-          payload: json,
-        });
-      }
-    });
-};
-
 export const itemDelete = (id) => {
   return function (dispatch) {
     dispatch({ type: DELETE_LOAD_START, payload: id });
@@ -182,4 +160,26 @@ export const itemDelete = (id) => {
         });
       });
   };
+};
+
+export const loginStart = (login, password) => (dispatch) => {
+  dispatch({ type: AUTH_STARTED });
+
+  fetch("http://localhost:3010/admin")
+    .then((response) => response.json())
+    .then((json) => {
+      const random = Math.random();
+
+      if (random < 0.7) {
+        dispatch({
+          type: AUTH_FAILED,
+          payload: json,
+        });
+      } else {
+        dispatch({
+          type: AUTH_SUCCEED,
+          payload: json,
+        });
+      }
+    });
 };
