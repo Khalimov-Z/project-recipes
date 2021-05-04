@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { favoritePatch } from '../../redux/recipes';
 import { FiBookmark, FiMessageCircle, FiThumbsUp } from 'react-icons/fi';
 import { useDispatch } from 'react-redux';
 import Modal from '../Modal';
 import { Link } from 'react-router-dom';
+import { favoritePatch } from '../../redux/reducers/bookmarks';
 
 function MainRecipesItem(props) {
   const [modalActive, setModalActive] = useState(false);
@@ -28,9 +28,7 @@ function MainRecipesItem(props) {
   return (
     <div className="recipes-item m-auto d-block ">
       <div className="pb-4 mt-5">
-        <Link
-          to={`/categories/all-recipes/${props.item.id}/${props.item.title}`}
-        >
+        <Link to={`/recipes/${props.item.id}`}>
           <div className="d-inline d-flex pb-4 justify-content-between">
             <img
               className="mr-4"
