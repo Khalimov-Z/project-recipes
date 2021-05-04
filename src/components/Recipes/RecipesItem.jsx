@@ -47,7 +47,7 @@ function RecipesItem(props) {
               className="exit"
               onClick={() => itemDeleting(props.item.id)}
             >
-              ❌
+              ×
             </button>
           )}
         </div>
