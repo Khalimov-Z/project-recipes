@@ -46,7 +46,7 @@ export default function reducer(state = initialState, action) {
 export const loginStart = (login, password) => (dispatch) => {
   dispatch({ type: AUTH_STARTED });
 
-  fetch(`http://localhost:3010/admin/?login=${login}&password=${password}`)
+  fetch(`/admin/?login=${login}&password=${password}`)
     .then((response) => response.json())
     .then((json) => {
       if (json.login === login && json.password === password) {

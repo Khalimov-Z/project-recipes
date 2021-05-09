@@ -27,7 +27,7 @@ export default function reducer(state = initialState, action) {
 
 export const loadRecipesItem = (id) => {
   return (dispatch) => {
-    fetch(`http://localhost:3010/recipes/${id}`)
+    fetch(`/recipes/${id}`)
       .then((response) => response.json())
       .then((json) => {
         dispatch({

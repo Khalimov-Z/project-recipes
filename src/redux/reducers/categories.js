@@ -17,7 +17,7 @@ export default function reducer(state = initialState, action) {
 
 export const loadCategories = () => {
   return (dispatch) => {
-    fetch('http://localhost:3010/categories')
+    fetch('/categories')
       .then((response) => response.json())
       .then((json) => {
         dispatch({

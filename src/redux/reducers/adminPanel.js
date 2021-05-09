@@ -143,7 +143,7 @@ export const addRecipe = () => {
   return (dispatch, getState) => {
     const { recipe } = getState().adminPanel;
     dispatch({ type: 'add/recipe/started' });
-    fetch('http://localhost:3010/recipes', {
+    fetch('/recipes', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
