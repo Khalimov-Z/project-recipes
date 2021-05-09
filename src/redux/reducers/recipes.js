@@ -84,7 +84,7 @@ export const loadRecipes = (id) => {
   return (dispatch) => {
     dispatch({ type: RECIPES_LOAD_START });
 
-    let url = 'http://localhost:3010/recipes';
+    let url = '/recipes';
 
     if (id) {
       url += `/?categoryId=${id}`;
@@ -105,7 +105,7 @@ export const recipeDelete = (id) => {
   return function (dispatch) {
     dispatch({ type: DELETE_LOAD_START, payload: id });
 
-    fetch('http://localhost:3010/recipes', {
+    fetch('/recipes', {
       method: 'DELETE',
     })
       .then((response) => response.json())

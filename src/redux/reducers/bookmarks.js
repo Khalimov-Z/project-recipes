@@ -27,7 +27,7 @@ export default function reducer(state = initialState, action) {
 
 export function favoritePatch(id, favorite) {
   return (dispatch) => {
-    fetch(`http://localhost:3010/recipes/${id}`, {
+    fetch(`/recipes/${id}`, {
       method: 'PATCH',
       body: JSON.stringify({ favorite: !favorite }),
       headers: { 'Content-type': 'application/json' },
