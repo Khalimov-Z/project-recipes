@@ -34,6 +34,7 @@ function Modal(props) {
           {initComm.map((comm, index) => {
             return (
               <div key={index}>
+                <div className="namecoment">Alex:</div>
                 <i>{comm.commentText}</i>
               </div>
             );

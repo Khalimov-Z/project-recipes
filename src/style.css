@@ -250,3 +250,15 @@ a:hover {
   justify-content: space-between;
   margin: auto;
 }
+
+.namecoment {
+  text-align: start;
+  font-size: 16px;
+  font-weight: bold;
+  width: 50px;
+}
+
+.like-one {
+  text-align: center;
+  font-size: 20px;
+}
