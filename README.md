@@ -57,35 +57,14 @@ npm run dev
 ---
 
 <h3>
-  <a href="https://github.com/KasumovW">
-    <img alt="Kasumov" src="https://img.shields.io/badge/-Zubayra_Kasumov-black?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="https://github.com/Khalimov-Z">
+    <img alt="Khalimov" src="https://img.shields.io/badge/-Zubayra_Khalimov-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
 
-### В данном проекте я выполнял следующее:
-
-#### 1. Сделал верстку данного проекта
-
-#### 2. Сделал функцию удаления рецепта при авторизации на сайте
-
-#### 3. Сделал модальное окно для оставления комментариев
-
-### А так же работал над следующим:
-
-- #### React Router и переключением между сраницами
-- #### Авторизацией на проекте
-- #### С сервером Json
-- #### GIT
-- #### Редюсарами
-- #### Redux
-- #### Redux Thunk
-- #### Redux Logger
-
----
-
 <h3>
-  <a href="https://github.com/Khalimov-Z">
-    <img alt="Khalimov" src="https://img.shields.io/badge/-Zubayra_Khalimov-black?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="https://github.com/KasumovW">
+    <img alt="Kasumov" src="https://img.shields.io/badge/-Zubayra_Kasumov-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
 
@@ -100,3 +79,54 @@ npm run dev
     <img alt="Movsar" src="https://img.shields.io/badge/-Movsar-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
+
+---
+
+### В этом проекте я выполнял следующие задачи:
+
+- [x] Создать react приложение
+- [x] Пользователь может смотреть категории рецептов
+- [x] Организовать роутинг-маршрутизация внутри проекта
+- [x] Администратор может войти в панель управлению
+- [x] Администратор может добавить рецепты
+
+---
+
+> > **1. Создать react приложение**</br>
+> > Создал реакт-приложение project-recipes.</br>
+> > Из проекта удалил лишние файлы и создал нужные для начало работы компоненты и репозитории.<br>
+> > Установил следующие библиотеки в зависимости:
+>
+> - bootstrap
+> - react-redux
+> - redux
+> - redux-logger
+> - react-router-dom
+> - redux-thunk
+> - prettier
+>
+> А также для каждого разработчика проекта, создал ветки и выгрузил их, после этого запушил проект на github.
+>
+> > **2. Пользователь может смотреть категории рецептов**</br>
+> > Для выполнения данной задачи я использовал библиотеку react-router-dom, с помощью этой библиотеки организовал маршрут-переход по категориям.<br>
+> > Также была использована библиотека react-bootstrap, с помощью которого создал выпадающий список
+>
+> > **3. Организовать роутинг-маршрутизация внутри проекта**</br>
+> > Маршрутизация внутри проекта организовал используя библиотеку react-router-dom, <br>
+> > также для решения задачи я создал пользовательские хуки, под названием useAuth.js и useRoutes.js.
+>
+> > **4. Администратор может войти в панель управлению**</br>
+> > Для реализации этой задачи я использовал пользовательские хуки, useAuth.js и useRoutes.js.
+>
+> > **5. Администратор может добавить рецепты**</br>
+> > Для выполнения этой задачи я создал компонент AdminPage.jsx и отдельный редюсер adminPanel.js и с помощью библиотеки redux-thunk организовал добавление рецепта.
+
+---
+
+### Для выполнения поставленных задач я использовал следующие библиотеки:
+
+- redux, redux-thunk - чтобы создавать асинхронные экшены
+- react-router-dom - для роутинга
+- и еще react-bootstrap, react-icons, json-server
+
+---
